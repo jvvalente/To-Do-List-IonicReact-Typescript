@@ -13,6 +13,6 @@ ionic serve
 
 Once your browser opens(preferably Chrome or Firefox) use inspect element to toggle between web and mobile view.
 
-<img src='https://github.com/jvvalente/To-Do-List-IonicReact-Typescript/blob/main/screenshots/Webview_1.png' title='WebView 1' width='' />
+<img src='https://github.com/jvvalente/To-Do-List-IonicReact-Typescript/blob/main/screenshots/Webview_1.png' title='WebView 1' width='' alt='WebView 1/>
 
 
