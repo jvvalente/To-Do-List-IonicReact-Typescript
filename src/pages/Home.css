@@ -1,0 +1,116 @@
+.titleBar{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background: #6236ff;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: xx-large;
+    color: white;
+}
+
+.item-list{
+    background-color:#e3dcdc;
+    padding-bottom: 0%;
+}
+
+.add-item{
+    height: 65px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 8px;
+}
+
+.add-item-input{
+    height: 20px;
+    width: 100px;
+}
+
+.add-button{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 40%;
+    font-size: 20px;
+    color: white;
+}
+
+.item-container{
+    
+}
+
+.edit-button{
+    color: black;
+    background: fixed;
+    background-color: transparent;
+    box-shadow: none;
+    
+
+}
+
+.delete-button{
+    color: black;
+    background: fixed;
+    background-color: transparent;
+    box-shadow: none;
+    
+}
+
+.list-item{
+    padding-right: 3%;
+    padding-left: 4%;
+    height: 60px;
+    justify-items: center;
+    fill-opacity: initial;
+    
+}
+
+.item-list{
+    
+}
+
+.item-name{
+    
+}
+
+.my-custom-class{
+    --width: 580px;
+    --height: 370px;
+    
+}
+
+.edit-task-header{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0ch;
+}
+
+.edit-item-input{
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    border-width: 3px;
+    text-align:left;
+}
+
+.editValue{
+    height: 30px;
+    width: 200px;
+    margin-left: 7%;
+    
+}
+
+.cancel-button{
+    height: 30px;
+    width: 150px;
+    color: black;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
