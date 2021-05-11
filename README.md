@@ -2,7 +2,11 @@
 
 # Instructions to run
 Make sure you have cli installed
-[npm install -g @ionic/cli]
+```
+npm install -g @ionic/cli
+```
 
 Move to location of project and run ionic
-[ionic serve]
+```
+ionic serve
+```
