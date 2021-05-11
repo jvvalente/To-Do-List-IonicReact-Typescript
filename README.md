@@ -13,4 +13,6 @@ ionic serve
 
 Once your browser opens(preferably Chrome or Firefox) use inspect element to toggle between web and mobile view.
 
+<img src='WebView_1' title='WebView 1' width='' />
+
 
