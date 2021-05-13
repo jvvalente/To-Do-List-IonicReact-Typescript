@@ -95,8 +95,7 @@
     margin-bottom: 5%;
     border: 1px solid black;
     border-width: 3px;
-    text-align: center;
-    text-overflow: ellipsis;
+    text-align: left;
 }
 
 .editValue{
