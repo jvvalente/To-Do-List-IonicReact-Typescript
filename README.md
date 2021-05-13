@@ -22,3 +22,4 @@ Once your browser opens(preferably Chrome or Firefox) use inspect element to tog
 # MobileView
 <img src='https://github.com/jvvalente/To-Do-List-IonicReact-Typescript/blob/main/screenshots/MobileView.png' title='MobileView' width=''/>
 
+Firebase hosting: https://console.firebase.google.com/project/to-do-list-96d49/overview
