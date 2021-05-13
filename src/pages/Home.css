@@ -10,7 +10,7 @@
 }
 
 .item-list{
-    background-color:#e3dcdc;
+    background-color: #ffffff;
     padding-bottom: 0%;
 }
 
@@ -33,19 +33,14 @@
     width: 40%;
     font-size: 20px;
     color: white;
-}
-
-.item-container{
-    
+    margin-right: -16px;
 }
 
 .edit-button{
     color: black;
     background: fixed;
     background-color: transparent;
-    box-shadow: none;
-    
-
+    box-shadow: none !important;
 }
 
 .delete-button{
@@ -56,21 +51,24 @@
     
 }
 
-.list-item{
+.list-even-item{
+    padding-top: 5px;
     padding-right: 3%;
     padding-left: 4%;
     height: 60px;
     justify-items: center;
     fill-opacity: initial;
-    
+    background-color:#ffffff;
 }
 
-.item-list{
-    
-}
-
-.item-name{
-    
+.list-odd-item{
+    padding-top: 5px;
+    padding-right: 3%;
+    padding-left: 4%;
+    height: 60px;
+    justify-items: center;
+    fill-opacity: initial;
+    background-color:#e4dcdc;
 }
 
 .my-custom-class{
@@ -89,6 +87,7 @@
 }
 
 .edit-item-input{
+    
     height: 80%;
     width: 80%;
     margin-left: 10%;
@@ -96,7 +95,8 @@
     margin-bottom: 5%;
     border: 1px solid black;
     border-width: 3px;
-    text-align:left;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 
 .editValue{

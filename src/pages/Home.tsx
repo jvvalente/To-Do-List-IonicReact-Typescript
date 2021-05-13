@@ -3,6 +3,7 @@ import './Home.css';
 import React, { useState, useEffect } from 'react';
 import { trashOutline, pencilOutline, ellipseOutline, checkmarkCircle } from 'ionicons/icons';
 
+
 var indexToEdit = 0;
 
 const Home: React.FC = () => {
@@ -95,7 +96,7 @@ const Home: React.FC = () => {
       onDidDismiss={() => setShowPopover({ showPopover: false})}
       >
       <IonHeader className="edit-task-header" >Edit Task</IonHeader>
-      <IonInput type="text" value={editValue} className='edit-item-input' onIonChange={e => setEditValue(e.detail.value!)} placeholder='Edit this item...' slot="end" ></IonInput>
+      <IonInput type="text" value={editValue} className='edit-item-input' class='wideInput' onIonChange={e => setEditValue(e.detail.value!)} placeholder='Edit this item...' slot="end" ></IonInput>
       <IonItem>
         <IonButton className="editValue" color="success" onClick={() => handleEditButton()}>Save</IonButton>
         <IonButton className="cancel-button" color="transparent" onClick={() => closePopover()}>Cancel</IonButton>
@@ -117,9 +118,30 @@ const Home: React.FC = () => {
 						<div className='item-container'>
 							<div className='item-name' >
 									<>
-                  <IonItem lines="none" color="black" className="list-item">
+                  {index % 2 == 0 ? (
                     
-                    
+                      <IonItem lines="none"  className="list-even-item">
+                      {item.isSelected ? (
+                        <>
+                        <IonIcon className="item-selected" icon={checkmarkCircle} onClick={() => handleToggleComplete(index)}></IonIcon>
+                        <span><del>{item.itemName}</del></span>
+                        </>
+                      ) : (
+                        <>
+                        <IonIcon className="item-single-name" icon={ellipseOutline} onClick={() => handleToggleComplete(index)}></IonIcon>
+                        <span>{item.itemName}</span>
+                        </>
+                      )}
+                        <IonButton className="edit-button" color="black" onClick={(e: any) => {e.persist();setShowPopover({ showPopover: true});setEditIndex(index)}} slot="end">
+                          <IonIcon icon={pencilOutline}  ></IonIcon>
+                        </IonButton>
+                        <IonButton className="delete-button" color="black" onClick={() => handleDeleteButton(index)} slot="end">
+                          <IonIcon icon={trashOutline} ></IonIcon>  
+                      </IonButton>
+                      
+                      </IonItem>
+                  ) : (
+                    <IonItem lines="none" color="black" className="list-odd-item">
                     {item.isSelected ? (
 									    <>
 										  <IonIcon className="item-selected" icon={checkmarkCircle} onClick={() => handleToggleComplete(index)}></IonIcon>
@@ -132,14 +154,14 @@ const Home: React.FC = () => {
 									    </>
 								    )}
                     <IonButton className="edit-button" color="black" onClick={(e: any) => {e.persist();setShowPopover({ showPopover: true});setEditIndex(index)}} slot="end">
-                      <IonIcon icon={pencilOutline}  ></IonIcon>
+                      <IonIcon icon={pencilOutline} className="pencil-button"></IonIcon>
                     </IonButton>
                     <IonButton className="delete-button" color="black" onClick={() => handleDeleteButton(index)} slot="end">
                       <IonIcon icon={trashOutline} ></IonIcon>  
                     </IonButton>
                     
                   </IonItem>
-                    
+                  )}
 									</>
 							</div>
 						
